@@ -1,0 +1,27 @@
+{
+  "name": "ileague",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "bun run --filter './apps/*' dev",
+    "dev:web": "bun run --filter @ileague/web dev",
+    "dev:mobile": "bun run --filter @ileague/mobile start",
+    "dev:convex": "bun run --filter @ileague/convex dev",
+    "build": "bun run --filter './apps/*' build",
+    "build:web": "bun run --filter @ileague/web build",
+    "lint": "bun run --filter './apps/*' lint",
+    "typecheck": "bun run --filter './apps/*' typecheck",
+    "clean": "rm -rf node_modules && rm -rf apps/*/node_modules && rm -rf packages/*/node_modules"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
