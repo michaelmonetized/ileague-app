@@ -1,6 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
-import localFont from "next/font/local";
+import { Inter, DM_Sans } from "next/font/google";
 import { Providers } from "@/providers";
 import "./globals.css";
 
@@ -10,11 +9,11 @@ const inter = Inter({
   display: "swap",
 });
 
-const calSans = localFont({
-  src: "../../public/fonts/CalSans-SemiBold.woff2",
+const dmSans = DM_Sans({
+  subsets: ["latin"],
   variable: "--font-cal",
+  weight: ["600", "700"],
   display: "swap",
-  fallback: ["system-ui", "sans-serif"],
 });
 
 export const metadata: Metadata = {
@@ -75,7 +74,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.variable} ${calSans.variable} font-sans`}>
+      <body className={`${inter.variable} ${dmSans.variable} font-sans`}>
         <Providers>{children}</Providers>
       </body>
     </html>
