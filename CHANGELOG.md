@@ -2,6 +2,18 @@
 
 All notable changes to iLeague will be documented in this file.
 
+## [1.0.2] - 2026-01-09
+
+### Fixed
+- Downgraded React from 19 to 18.3.1 for Clerk/Convex compatibility
+- Fixed Vercel deployment configuration for monorepo
+- Added proper vercel.json for build/output configuration
+- Resolved 404 page prerender errors
+
+### Added
+- Convex project created and deployed: `kindred-gnu-699`
+- Live production deployment: https://ileague-76idfluv7-hustle-launch.vercel.app
+
 ## [1.0.1] - 2026-01-09
 
 ### Fixed
