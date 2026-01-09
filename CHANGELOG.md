@@ -2,6 +2,18 @@
 
 All notable changes to iLeague will be documented in this file.
 
+## [1.0.1] - 2026-01-09
+
+### Fixed
+- Updated Sentry configuration for v10 API compatibility
+- Replaced local font with Google Fonts (DM Sans)
+- Added Convex generated stubs for initial build
+- Pushed environment variables to Vercel project
+
+### Added
+- GitHub repository: https://github.com/michaelmonetized/ileague-app
+- Vercel project linked: ileague-web
+
 ## [1.0.0] - 2026-01-09
 
 ### 🎉 Initial Release
